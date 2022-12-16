@@ -120,8 +120,6 @@ mod test {
         assert_eq!(NetworkName::N1, name_from_symbol("S1", &mut cache));
         assert_eq!(NetworkName::N2, name_from_symbol("S2", &mut cache));
         assert_eq!(NetworkName::N3, name_from_symbol("s3", &mut cache));
-
-        assert_ne!(NetworkName::N1, name_from_symbol("S2", &mut cache));
     }
 
     #[test]
